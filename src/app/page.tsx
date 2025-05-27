@@ -1,163 +1,198 @@
 "use client";
-import { useState } from "react";
 
-// FAQ data (puoi aggiungerne altre)
+import { motion } from "framer-motion";
+
+const features = [
+  { title: "Carica i tuoi documenti", desc: "Semplice upload di procedure, contratti, manuali ISO..." },
+  { title: "L’AI li processa", desc: "Zero training, zero call: subito pronta a rispondere." },
+  { title: "Fai domande istantanee", desc: "Ottieni risposte in pochi secondi su qualsiasi dettaglio." },
+  { title: "Scalabile e sicuro", desc: "Progettato per aziende e privacy totale." },
+];
+
 const faqs = [
+  { q: "Serve formazione per usare Phæton AI?", a: "No! Ti basta caricare i tuoi documenti: la nostra AI è subito pronta." },
+  { q: "I miei dati sono al sicuro?", a: "Assolutamente sì: i tuoi documenti restano privati e protetti." },
+  { q: "Che tipi di file posso caricare?", a: "PDF, DOCX, TXT, e molti altri. Contattaci per formati custom." },
+  { q: "Posso provarlo gratis?", a: "Certo, puoi richiedere una demo senza impegno!" },
+];
+
+const testimonials = [
   {
-    question: "Devo fare training dei miei documenti?",
-    answer: "No! Carica subito file PDF, Word o Excel. La nostra AI li legge al volo e risponde senza configurazioni.",
+    quote: "Con Phæton AI risparmio ore ogni settimana. Semplice, veloce, affidabile.",
+    name: "Giulia R.",
+    role: "Operation Manager @ TechCo",
   },
   {
-    question: "Dove vanno i miei dati?",
-    answer: "Restano al sicuro, processati solo per rispondere. Nessun dato venduto, mai.",
-  },
-  {
-    question: "Funziona con documenti in inglese o altre lingue?",
-    answer: "Sì, supportiamo italiano, inglese, spagnolo, francese e molte altre.",
-  },
-  {
-    question: "Posso provare gratis?",
-    answer: "Certo! Clicca su Try the Demo e inizia subito.",
+    quote: "L’unica AI che ho visto funzionare senza training o setup infinito.",
+    name: "Luca P.",
+    role: "CEO @ StartupPro",
   },
 ];
 
 export default function Home() {
-  const [open, setOpen] = useState<number | null>(null);
-
   return (
-    <main className="bg-gradient-to-b from-slate-950 to-slate-900 min-h-screen flex flex-col">
-      {/* Navbar */}
-      <nav className="sticky top-0 z-50 bg-slate-950/90 backdrop-blur flex items-center justify-between px-8 py-4 border-b border-slate-800">
-        <div className="flex items-center gap-2">
-          <span className="font-extrabold text-2xl text-white tracking-tight">Phæton AI</span>
-        </div>
-        <div className="flex items-center gap-8 text-slate-200 text-base font-medium">
-          <a href="#features" className="hover:text-primary transition">Features</a>
-          <a href="#how" className="hover:text-primary transition">How it works</a>
-          <a href="#faq" className="hover:text-primary transition">FAQ</a>
-          <a href="#contact" className="hover:text-primary transition">Contact</a>
-        </div>
-      </nav>
+    <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white">
+      {/* Sticky Navbar */}
+      <header className="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800">
+        <nav className="container mx-auto flex items-center justify-between px-4 py-3">
+          <span className="font-bold text-2xl tracking-tight">Phæton AI</span>
+          <div className="space-x-5 hidden md:flex">
+            <a href="#how" className="hover:underline">Come funziona</a>
+            <a href="#why" className="hover:underline">Perché noi</a>
+            <a href="#pricing" className="hover:underline">Pricing</a>
+            <a href="#faq" className="hover:underline">FAQ</a>
+          </div>
+          {/* Mobile Hamburger */}
+          <div className="md:hidden">
+            {/* [Placeholder: hamburger se vuoi farlo fancy, te lo aggiungo dopo] */}
+          </div>
+        </nav>
+      </header>
 
-      {/* Hero */}
-      <section className="flex flex-col md:flex-row items-center justify-between gap-12 px-8 md:px-20 pt-20 pb-28">
-        <div className="flex-1">
-          <h1 className="text-5xl md:text-6xl font-extrabold text-white leading-tight mb-6">
-            Query any document <span className="text-primary">in seconds</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-slate-200 mb-8 max-w-xl">
-            Carica procedure operative, contratti o manuali ISO.<br />
-            La nostra AI enterprise risponde alle domande<br className="hidden md:block" />
-            <span className="font-semibold text-primary">senza training né call</span>.
-          </p>
-          <div className="flex gap-4 flex-wrap">
-            <a
-              href="https://demo.phaeton-ai.com"
-              className="px-8 py-4 bg-primary hover:bg-primary-dark rounded-xl text-lg font-bold text-white shadow-lg transition"
+      {/* HERO */}
+      <section className="container mx-auto flex flex-col items-center justify-center py-20 text-center">
+        <motion.h1
+          className="text-5xl md:text-6xl font-extrabold mb-4"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+        >
+          Query any doc <span className="text-primary">in seconds</span>
+        </motion.h1>
+        <motion.p
+          className="max-w-2xl mb-8 opacity-90"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.7 }}
+        >
+          Carica procedure, contratti o manuali ISO e lascia che la nostra AI enterprise risponda—<br />
+          senza training né call.
+        </motion.p>
+        <motion.div
+          className="flex gap-4 mb-10"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.7, duration: 0.7 }}
+        >
+          <a href="https://demo.phaeton-ai.com" className="px-8 py-3 rounded-xl bg-primary hover:bg-primary-dark transition font-semibold shadow-lg">Prova la demo</a>
+          <a href="/one-pager.pdf" className="px-8 py-3 rounded-xl border border-primary hover:bg-primary/20 transition font-semibold">Scarica One-Pager</a>
+        </motion.div>
+      </section>
+
+      {/* COME FUNZIONA */}
+      <section id="how" className="container mx-auto py-14">
+        <h2 className="text-3xl font-bold mb-8 text-primary">Come funziona</h2>
+        <div className="grid md:grid-cols-4 gap-8">
+          {features.map((f, i) => (
+            <motion.div
+              key={f.title}
+              className="bg-slate-800 rounded-xl p-6 shadow hover:scale-105 transition"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
             >
-              Try the Demo
-            </a>
-            <a
-              href="/one-pager.pdf"
-              className="px-8 py-4 border border-primary rounded-xl text-lg font-bold text-primary bg-white/5 hover:bg-primary/10 transition"
-            >
-              Download One-Pager
-            </a>
-          </div>
-        </div>
-        <div className="flex-1 flex items-center justify-center">
-          {/* Finto mockup */}
-          <div className="bg-slate-800 rounded-2xl shadow-2xl border border-slate-700 p-6 w-[350px] md:w-[400px] h-[320px] flex flex-col justify-center items-center">
-            <div className="w-full h-40 bg-gradient-to-br from-primary/40 to-slate-700 rounded-xl mb-6"></div>
-            <div className="w-3/4 h-6 bg-slate-700 rounded-lg mb-2"></div>
-            <div className="w-1/2 h-6 bg-slate-600 rounded-lg mb-2"></div>
-            <div className="w-full h-3 bg-slate-700 rounded mb-1"></div>
-            <div className="w-full h-3 bg-slate-800 rounded mb-1"></div>
-            <div className="w-2/3 h-3 bg-slate-700 rounded"></div>
-          </div>
-        </div>
-      </section>
-
-      {/* How it works */}
-      <section id="how" className="py-16 px-4 md:px-24 bg-slate-900">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-10">Come funziona</h2>
-        <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
-          <div className="bg-slate-800 rounded-xl p-6 flex flex-col items-center text-center">
-            <span className="text-4xl mb-2">📤</span>
-            <h3 className="font-bold text-lg text-white mb-2">Carica documenti</h3>
-            <p className="text-slate-300">PDF, Word, Excel, manuali ISO, SOP, policy aziendali.</p>
-          </div>
-          <div className="bg-slate-800 rounded-xl p-6 flex flex-col items-center text-center">
-            <span className="text-4xl mb-2">⚡</span>
-            <h3 className="font-bold text-lg text-white mb-2">Risposte istantanee</h3>
-            <p className="text-slate-300">Chiedi qualsiasi cosa, l’AI risponde in <b>pochi secondi</b>.</p>
-          </div>
-          <div className="bg-slate-800 rounded-xl p-6 flex flex-col items-center text-center">
-            <span className="text-4xl mb-2">🔒</span>
-            <h3 className="font-bold text-lg text-white mb-2">Zero training</h3>
-            <p className="text-slate-300">Nessuna call tecnica, nessun settaggio complicato.</p>
-          </div>
-          <div className="bg-slate-800 rounded-xl p-6 flex flex-col items-center text-center">
-            <span className="text-4xl mb-2">🌍</span>
-            <h3 className="font-bold text-lg text-white mb-2">Multi-lingua</h3>
-            <p className="text-slate-300">Perfetto per aziende globali e team internazionali.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* For whom */}
-      <section className="py-16 px-4 md:px-24 bg-slate-950">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-10">Perfetto per</h2>
-        <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
-          <div className="bg-slate-800 rounded-xl p-6 flex flex-col items-center text-center">
-            <span className="text-xl font-bold text-primary mb-2">Manager ISO</span>
-            <span className="text-slate-200">Risposte pronte su policy e certificazioni.</span>
-          </div>
-          <div className="bg-slate-800 rounded-xl p-6 flex flex-col items-center text-center">
-            <span className="text-xl font-bold text-primary mb-2">Team legali</span>
-            <span className="text-slate-200">Ricerca rapida su contratti e clausole.</span>
-          </div>
-          <div className="bg-slate-800 rounded-xl p-6 flex flex-col items-center text-center">
-            <span className="text-xl font-bold text-primary mb-2">Consulenti</span>
-            <span className="text-slate-200">Gestisci più clienti senza perdere tempo.</span>
-          </div>
-          <div className="bg-slate-800 rounded-xl p-6 flex flex-col items-center text-center">
-            <span className="text-xl font-bold text-primary mb-2">CEO & Board</span>
-            <span className="text-slate-200">Informazioni operative senza aspettare giorni.</span>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section id="faq" className="py-16 px-4 md:px-24 bg-slate-900">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-10">Domande frequenti</h2>
-        <div className="max-w-3xl mx-auto">
-          {faqs.map((faq, i) => (
-            <div key={i} className="mb-4 border-b border-slate-700">
-              <button
-                onClick={() => setOpen(open === i ? null : i)}
-                className="w-full flex justify-between items-center py-4 text-lg text-white focus:outline-none"
-              >
-                <span>{faq.question}</span>
-                <span className="ml-4">{open === i ? "▲" : "▼"}</span>
-              </button>
-              {open === i && (
-                <div className="text-slate-300 pb-4">{faq.answer}</div>
-              )}
-            </div>
+              <div className="mb-2 text-xl font-semibold">{f.title}</div>
+              <div className="opacity-80">{f.desc}</div>
+            </motion.div>
           ))}
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-slate-950 border-t border-slate-800 py-8 px-6 flex flex-col md:flex-row items-center justify-between text-slate-400 text-sm">
-        <div>
-          © 2025 Phæton AI • All rights reserved.
+      {/* PERCHE' NOI */}
+      <section id="why" className="container mx-auto py-14">
+        <h2 className="text-3xl font-bold mb-8 text-primary">Perché scegliere noi?</h2>
+        <div className="grid md:grid-cols-2 gap-10">
+          <ul className="space-y-4 text-lg">
+            <li>🚀 **Subito pronto:** nessun training, zero setup</li>
+            <li>🔒 **Privacy totale:** nessun dato inviato a terzi</li>
+            <li>⚡️ **Risposte istantanee:** su contratti, ISO, policy, tutto</li>
+            <li>👨‍💻 **Supporto umano, sempre**</li>
+          </ul>
+          <motion.div
+            className="bg-slate-800 rounded-xl p-6 shadow flex flex-col justify-center"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3 }}
+          >
+            <div className="text-xl font-semibold mb-2">"Provatelo una volta, e non tornerete indietro."</div>
+            <div className="opacity-70">— Team Phæton AI</div>
+          </motion.div>
         </div>
-        <div className="flex gap-6 mt-4 md:mt-0">
-          <a href="#" className="hover:text-primary">Privacy</a>
-          <a href="#" className="hover:text-primary">Contattaci</a>
-          <a href="#" className="hover:text-primary">LinkedIn</a>
+      </section>
+
+      {/* PRICING */}
+      <section id="pricing" className="container mx-auto py-14 text-center">
+        <h2 className="text-3xl font-bold mb-8 text-primary">Pricing</h2>
+        <div className="flex flex-col md:flex-row justify-center gap-8">
+          {/* Starter */}
+          <div className="bg-slate-800 rounded-xl p-8 shadow-xl flex-1">
+            <div className="text-2xl font-semibold mb-2">Starter</div>
+            <div className="text-4xl font-bold mb-4">Gratis</div>
+            <ul className="mb-6 space-y-2 opacity-80">
+              <li>✔ Demo senza limiti</li>
+              <li>✔ 1 utente</li>
+              <li>✔ Supporto base</li>
+            </ul>
+            <a href="https://demo.phaeton-ai.com" className="px-6 py-2 rounded-lg bg-primary hover:bg-primary-dark font-semibold shadow transition">Prova ora</a>
+          </div>
+          {/* Business */}
+          <div className="bg-slate-900 border-2 border-primary rounded-xl p-8 shadow-xl flex-1 scale-105">
+            <div className="text-2xl font-semibold mb-2">Business</div>
+            <div className="text-4xl font-bold mb-4">99€/mese</div>
+            <ul className="mb-6 space-y-2 opacity-80">
+              <li>✔ Fino a 20 utenti</li>
+              <li>✔ AI personalizzata</li>
+              <li>✔ Supporto premium</li>
+            </ul>
+            <a href="mailto:info@phaeton-ai.com" className="px-6 py-2 rounded-lg bg-primary hover:bg-primary-dark font-semibold shadow transition">Contattaci</a>
+          </div>
+        </div>
+      </section>
+
+      {/* TESTIMONIANZE */}
+      <section className="container mx-auto py-14">
+        <h2 className="text-3xl font-bold mb-8 text-primary">Testimonianze</h2>
+        <div className="grid md:grid-cols-2 gap-8">
+          {testimonials.map((t, i) => (
+            <motion.div
+              key={i}
+              className="bg-slate-800 rounded-xl p-6 shadow border-l-4 border-primary"
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.2 }}
+            >
+              <div className="text-lg mb-2 italic">"{t.quote}"</div>
+              <div className="opacity-70">{t.name} – <span className="text-primary">{t.role}</span></div>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section id="faq" className="container mx-auto py-14">
+        <h2 className="text-3xl font-bold mb-8 text-primary">FAQ</h2>
+        <div className="space-y-4">
+          {faqs.map((f, i) => (
+            <details key={i} className="bg-slate-800 rounded-xl p-4 shadow">
+              <summary className="font-semibold cursor-pointer">{f.q}</summary>
+              <div className="opacity-80 mt-2">{f.a}</div>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="bg-slate-900 py-8 mt-10 text-center text-sm opacity-80 border-t border-slate-800">
+        <div className="flex flex-col md:flex-row justify-between items-center container mx-auto px-4">
+          <div>© 2025 Phæton AI · All rights reserved.</div>
+          <div className="space-x-4 mt-2 md:mt-0">
+            <a href="#" className="hover:underline">Privacy</a>
+            <a href="#" className="hover:underline">Termini</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" className="hover:underline">LinkedIn</a>
+          </div>
         </div>
       </footer>
     </main>
