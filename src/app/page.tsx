@@ -48,7 +48,7 @@ export default function Home() {
           <ul className="mb-8 space-y-2 text-lg font-medium text-slate-700">
             <li><b>&bull; Upload ANY business doc</b> (contracts, policies, manuals…)</li>
             <li><b>&bull; Get instant, expert answers</b> 24/7 (no manual search)</li>
-            <li><b>&bull; Automate workflows, spot risks &amp; save time</b> in minutes</li>
+            <li><b>&bull; Automate workflows, spot risks & save time</b> in minutes</li>
           </ul>
           <a
             href="#demo"
@@ -107,7 +107,7 @@ export default function Home() {
           <div className="flex flex-col items-center text-center px-8">
             <Image src="/icon-upload.png" alt="Upload" width={80} height={80} />
             <h4 className="font-bold mt-5 text-lg text-indigo-700">1. Upload</h4>
-            <p className="opacity-90 text-base text-slate-700">Drag &amp; drop any file—PDF, Word, whatever. No tech team needed.</p>
+            <p className="opacity-90 text-base text-slate-700">Drag & drop any file—PDF, Word, whatever. No tech team needed.</p>
           </div>
           <div className="flex flex-col items-center text-center px-8">
             <Image src="/icon-ai.png" alt="AI" width={80} height={80} />
@@ -116,7 +116,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center text-center px-8">
             <Image src="/feature-automation-alt.png" alt="Automation" width={80} height={80} />
-            <h4 className="font-bold mt-5 text-lg text-indigo-700">3. Automate &amp; Analyze</h4>
+            <h4 className="font-bold mt-5 text-lg text-indigo-700">3. Automate & Analyze</h4>
             <p className="opacity-90 text-base text-slate-700">Automate boring tasks, get instant analytics, and boost your workflow.</p>
           </div>
         </div>
@@ -166,64 +166,68 @@ export default function Home() {
       </section>
 
       {/* PRICING */}
-      <section id="pricing" className="py-24 bg-indigo-50">
-        <h2 className="text-4xl font-bold text-center text-indigo-700 mb-10">Pricing</h2>
-        <div className="flex flex-col md:flex-row justify-center gap-16">
-          <div className="bg-white border rounded-2xl shadow-xl flex flex-col items-center px-16 py-14 w-[340px]">
+      <section id="pricing" className="py-20 bg-indigo-50">
+        <h2 className="text-4xl font-bold text-center text-indigo-700 mb-10">Pricing & Enterprise Power-Ups</h2>
+        <div className="flex flex-col md:flex-row justify-center items-start gap-10 max-w-5xl mx-auto">
+          {/* PRICING CARD */}
+          <div className="bg-white border rounded-2xl shadow-xl flex flex-col items-center px-10 py-12 w-full md:w-[340px] mb-8 md:mb-0">
             <h4 className="text-2xl font-bold mb-2 text-indigo-700">Phaeton AI Enterprise</h4>
             <p className="text-5xl font-extrabold mb-2 text-indigo-600">$20,000</p>
-            <p className="mb-5 text-base text-slate-600">One-time setup. Includes 1 year of support.<br />Enterprise extras on demand.</p>
-            <ul className="mb-8 text-left text-base list-disc list-inside text-slate-800">
-              <li>Unlimited users &amp; storage</li>
-              <li>Custom branding &amp; analytics</li>
-              <li>API access &amp; automations</li>
+            <p className="mb-4 text-base text-slate-600 text-center">One-time setup. Includes 1 year of support.<br />Enterprise extras available below.</p>
+            <ul className="mb-6 text-left text-base list-disc list-inside text-slate-800">
+              <li>Unlimited users & storage</li>
+              <li>Custom branding & analytics</li>
+              <li>API access & automations</li>
               <li>Full privacy (your cloud/on-prem)</li>
-              <li>Premium support, updates &amp; more</li>
+              <li>Premium support, updates & more</li>
             </ul>
-            <a href="#demo" className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-xl transition font-bold shadow">
+            <a href="#demo" className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-xl transition font-bold shadow mt-2">
               Request Demo
             </a>
-          </div>
-        </div>
-        <div className="text-center mt-9 text-xs opacity-70 text-slate-500">
-          All prices in USD. VAT not included. Custom plans available—ask us!
-        </div>
-
-        {/* EXTRAS TABLE */}
-        <div className="max-w-4xl mx-auto mt-20">
-          <h3 className="text-2xl font-bold text-indigo-700 mb-8 text-center">Enterprise Power-Ups</h3>
-          <div className="flex flex-col md:flex-row gap-8 justify-center">
-            {/* API Enterprise */}
-            <div className="flex-1 bg-indigo-200 rounded-2xl shadow-lg p-9 flex flex-col items-center border hover:scale-105 transition">
-              <Image src="/feature-api.png" alt="API Enterprise" width={48} height={48} />
-              <h4 className="font-bold text-indigo-700 mt-4 mb-2 text-lg">API Enterprise</h4>
-              <p className="text-slate-700 text-base mb-2 text-center">Connect Phaeton to your stack. Automate uploads, audits, Q&amp;A, and more. Unlock limitless integrations.</p>
-              <span className="font-bold text-indigo-600 text-xl mt-auto">$5,000</span>
-            </div>
-            {/* Custom Branding */}
-            <div className="flex-1 bg-indigo-100 rounded-2xl shadow-lg p-9 flex flex-col items-center border hover:scale-105 transition">
-              <Image src="/icon-security.png" alt="Custom Branding" width={48} height={48} />
-              <h4 className="font-bold text-indigo-700 mt-4 mb-2 text-lg">Custom Branding</h4>
-              <p className="text-slate-700 text-base mb-2 text-center">Your logo, your colors, your domain—stand out and make Phaeton truly yours.</p>
-              <span className="font-bold text-indigo-600 text-xl mt-auto">$3,000</span>
-            </div>
-            {/* Bespoke Automations */}
-            <div className="flex-1 bg-indigo-200 rounded-2xl shadow-lg p-9 flex flex-col items-center border hover:scale-105 transition">
-              <Image src="/feature-automation-alt.png" alt="Custom Automations" width={48} height={48} />
-              <h4 className="font-bold text-indigo-700 mt-4 mb-2 text-lg">Bespoke Automations</h4>
-              <p className="text-slate-700 text-base mb-2 text-center">We build automations for your unique processes—save hours, cut costs, and eliminate errors.</p>
-              <span className="font-bold text-indigo-600 text-xl mt-auto">$8,000</span>
-            </div>
-            {/* Data Migration */}
-            <div className="flex-1 bg-indigo-100 rounded-2xl shadow-lg p-9 flex flex-col items-center border hover:scale-105 transition">
-              <Image src="/icon-upload.png" alt="Data Migration" width={48} height={48} />
-              <h4 className="font-bold text-indigo-700 mt-4 mb-2 text-lg">Migration &amp; Integration</h4>
-              <p className="text-slate-700 text-base mb-2 text-center">Migrate all your data, even from legacy systems—safe, fast, zero downtime.</p>
-              <span className="font-bold text-indigo-600 text-xl mt-auto">from $4,000</span>
+            <div className="text-center mt-5 text-xs opacity-70 text-slate-500">
+              All prices in USD. VAT not included. Custom plans available—ask us!
             </div>
           </div>
-          <div className="text-center mt-8 text-slate-600 text-sm opacity-90">
-          All extras are <b>optional</b> and tailored to your business. Ask for a custom quote and unlock the full power of Phaeton Enterprise.
+          {/* POWER-UPS */}
+          <div className="flex-1">
+            <h3 className="text-xl font-bold text-indigo-700 mb-6">Enterprise Power-Ups</h3>
+            <div className="grid grid-cols-1 gap-6">
+              {/* API Enterprise */}
+              <div className="flex items-center gap-4 bg-indigo-100 rounded-xl shadow p-5">
+                <Image src="/feature-api.png" alt="API Enterprise" width={44} height={44} />
+                <div className="flex-1">
+                  <div className="font-bold text-indigo-700">API Enterprise</div>
+                  <div className="text-slate-700 text-sm">Connect Phaeton to your stack, automate uploads, audits, and more. <b>$5,000</b></div>
+                </div>
+              </div>
+              {/* Custom Branding */}
+              <div className="flex items-center gap-4 bg-indigo-50 rounded-xl shadow p-5">
+                <Image src="/icon-security.png" alt="Custom Branding" width={44} height={44} />
+                <div className="flex-1">
+                  <div className="font-bold text-indigo-700">Custom Branding</div>
+                  <div className="text-slate-700 text-sm">Your logo, your domain, your style. <b>$3,000</b></div>
+                </div>
+              </div>
+              {/* Bespoke Automations */}
+              <div className="flex items-center gap-4 bg-indigo-100 rounded-xl shadow p-5">
+                <Image src="/feature-automation.png" alt="Custom Automations" width={44} height={44} />
+                <div className="flex-1">
+                  <div className="font-bold text-indigo-700">Bespoke Automations</div>
+                  <div className="text-slate-700 text-sm">Automate any process for your business—save time, eliminate errors. <b>$8,000</b></div>
+                </div>
+              </div>
+              {/* Data Migration */}
+              <div className="flex items-center gap-4 bg-indigo-50 rounded-xl shadow p-5">
+                <Image src="/icon-upload.png" alt="Migration & Integration" width={44} height={44} />
+                <div className="flex-1">
+                  <div className="font-bold text-indigo-700">Migration & Integration</div>
+                  <div className="text-slate-700 text-sm">Migrate all your data, even from legacy systems—safe, fast, zero downtime. <b>from $4,000</b></div>
+                </div>
+              </div>
+            </div>
+            <div className="text-center mt-7 text-slate-600 text-xs opacity-90">
+              All extras are <b>optional</b> and tailored to your business. Ask for a custom quote.
+            </div>
           </div>
         </div>
       </section>
@@ -241,53 +245,47 @@ export default function Home() {
           <div className="flex-1 flex justify-center">
             <a
               href="#demo"
-              className="flex items-center gap-4 px-10 py-5 bg-indigo-600 hover:bg-indigo-700 text-white text-2xl rounded-2xl font-bold shadow-xl transition mt-6 md:mt-0"
-            >
-              Try Phaeton Now
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section id="faq" className="py-24 bg-white">
-        <h2 className="text-4xl font-bold text-center text-indigo-700 mb-12">FAQ</h2>
-        <div className="flex flex-col md:flex-row gap-16 items-center justify-center max-w-5xl mx-auto">
-          <div className="flex-1 space-y-10 text-lg">
-            <div>
-              <h4 className="font-bold text-indigo-600 mb-2">Is my data secure?</h4>
-              <p>Absolutely! Everything runs on your cloud or on-premises. No third-party access, ever.</p>
-            </div>
-            <div>
-              <h4 className="font-bold text-indigo-600 mb-2">Can I use my own templates?</h4>
-              <p>Definitely! Upload any format, customize workflows, and brand your portal as you wish.</p>
-            </div>
-            <div>
-              <h4 className="font-bold text-indigo-600 mb-2">How fast is setup?</h4>
-              <p>Up &amp; running in a day. Zero technical complexity—just plug and go.</p>
-            </div>
-            <div>
-              <h4 className="font-bold text-indigo-600 mb-2">What does it cost to scale?</h4>
-              <p>Flat price, unlimited users &amp; docs. No surprises. Custom pricing? Just ask us.</p>
+              className="flex items-center gap-4 px-10 py-5 bg-indigo-600 hover:bg-indigo-700 text-white text-2xl rounded-2xl font-bold shadow transition mt-6 md:mt-0"
+              >
+                Try Phaeton Now
+              </a>
             </div>
           </div>
-          <div className="flex-1 flex justify-center">
-            <Image src="/faq-business-ai.png" alt="FAQ" width={340} height={340} className="rounded-2xl shadow border bg-white" />
+        </section>
+  
+        {/* FAQ */}
+        <section id="faq" className="py-24 bg-white">
+          <h2 className="text-4xl font-bold text-center text-indigo-700 mb-14">FAQ</h2>
+          <div className="flex flex-col md:flex-row gap-14 items-center justify-center max-w-5xl mx-auto">
+            <div className="flex-1 space-y-10 text-base">
+              <div>
+                <h4 className="font-bold text-indigo-600 mb-2">Is my data secure?</h4>
+                <p>Absolutely! Everything runs on your cloud or on-premises. No third-party access, ever.</p>
+              </div>
+              <div>
+                <h4 className="font-bold text-indigo-600 mb-2">Can I use my own templates?</h4>
+                <p>Of course! Upload any format, customize workflows, and brand your portal as you wish.</p>
+              </div>
+              <div>
+                <h4 className="font-bold text-indigo-600 mb-2">How fast is setup?</h4>
+                <p>Up & running in a day. Zero technical complexity—just plug and go.</p>
+              </div>
+              <div>
+                <h4 className="font-bold text-indigo-600 mb-2">What does it cost to scale?</h4>
+                <p>Flat price, unlimited users & docs. No surprises. Custom pricing? Just ask us.</p>
+              </div>
+            </div>
+            <div className="flex-1 flex justify-center">
+              <Image src="/faq-business-ai.png" alt="FAQ" width={340} height={340} className="rounded-2xl shadow border bg-white" />
+            </div>
           </div>
-        </div>
-      </section>
-
-      {/* FOOTER */}
-      <footer className="py-10 text-center text-base font-semibold bg-gradient-to-r from-white via-indigo-100 to-indigo-50 text-slate-700 mt-auto border-t border-indigo-100">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 px-4">
-          <span>
-            &copy; {new Date().getFullYear()} <b>Phaeton AI</b> &mdash; Built for bold companies. All rights reserved.
-          </span>
-          <span>
-            <span className="text-indigo-600">Trust your next move.</span> | <a href="mailto:contact@phaeton-ai.com" className="underline hover:text-indigo-800">Contact us</a>
-          </span>
-        </div>
-      </footer>
-    </main>
-  );
-}
+        </section>
+  
+        {/* FOOTER */}
+        <footer className="py-8 text-center text-base opacity-80 bg-gradient-to-r from-white to-indigo-50 text-slate-700">
+          © 2025 Phaeton AI · All rights reserved. <br />
+          <span className="text-indigo-500 font-bold">Work like tomorrow.</span>
+        </footer>
+      </main>
+    );
+  }
