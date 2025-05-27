@@ -40,8 +40,10 @@ export default function Home() {
             <span className="block mb-1">The <span className="text-indigo-600">Business Brain</span> that never sleeps.</span>
             <span className="text-slate-500 text-2xl block mt-2">Every document. Every answer. Every automation.</span>
           </motion.h1>
-          <p className="mb-7 text-lg text-indigo-700 font-semibold">
-            <span className="bg-indigo-100 px-3 py-1 rounded-xl">Empower your team with real AI. Transform how business gets done.</span>
+          <p className="mb-7 text-xl text-indigo-800 font-semibold">
+            <span className="bg-indigo-200 px-4 py-2 rounded-2xl">
+              One source of truth, zero wasted time. Trust Phaeton and work like tomorrow.
+            </span>
           </p>
           <ul className="mb-8 space-y-2 text-lg font-medium text-slate-700">
             <li><b>&bull; Upload ANY business doc</b> (contracts, policies, manuals…)</li>
@@ -75,19 +77,19 @@ export default function Home() {
       <ProfessionalOverview />
 
       {/* WHY PHAETON */}
-      <section id="why" className="py-20 bg-gradient-to-b from-indigo-50 to-white">
+      <section id="why" className="py-20 bg-gradient-to-b from-indigo-100 to-white">
         <h2 className="text-4xl font-bold text-center text-indigo-700 mb-7">Why choose Phaeton AI?</h2>
         <div className="flex flex-col md:flex-row gap-14 justify-center items-center max-w-5xl mx-auto">
           <div className="flex-1 flex flex-col gap-8">
-            <div className="bg-white/90 rounded-2xl shadow p-7 border-l-4 border-indigo-400">
+            <div className="bg-indigo-50 rounded-2xl shadow p-7 border-l-4 border-indigo-400">
               <h4 className="font-bold text-xl text-indigo-600 mb-1">Battle-tested security</h4>
               <p className="text-base text-slate-700">Your data is 100% private—hosted on your cloud or servers. No external access, no leaks. Enterprise-grade security and privacy, always.</p>
             </div>
-            <div className="bg-white/90 rounded-2xl shadow p-7 border-l-4 border-indigo-400">
+            <div className="bg-indigo-200 rounded-2xl shadow p-7 border-l-4 border-indigo-400">
               <h4 className="font-bold text-xl text-indigo-600 mb-1">Real business intelligence</h4>
               <p className="text-base text-slate-700">Not just another chatbot. Phaeton deeply reads, understands, and reasons on your real business docs—giving you actionable, reliable answers.</p>
             </div>
-            <div className="bg-white/90 rounded-2xl shadow p-7 border-l-4 border-indigo-400">
+            <div className="bg-indigo-50 rounded-2xl shadow p-7 border-l-4 border-indigo-400">
               <h4 className="font-bold text-xl text-indigo-600 mb-1">Proven results</h4>
               <p className="text-base text-slate-700">Phaeton saves hours every week, cuts risk, and empowers teams with the <b>right</b> info—while competitors still search emails.</p>
             </div>
@@ -124,22 +126,22 @@ export default function Home() {
       <section id="features" className="py-24 bg-white">
         <h2 className="text-4xl font-bold text-center text-indigo-700 mb-14">What can Phaeton do for you?</h2>
         <div className="grid md:grid-cols-4 gap-10 max-w-6xl mx-auto py-2">
-          <div className="bg-indigo-100 rounded-xl p-8 shadow flex flex-col items-center hover:scale-105 transition">
+          <div className="bg-indigo-200 rounded-xl p-8 shadow flex flex-col items-center hover:scale-105 transition">
             <Image src="/feature-privacy.png" alt="Privacy" width={54} height={54} />
             <h4 className="font-bold mt-4 mb-2 text-indigo-700 text-lg">Full Privacy</h4>
             <p className="text-sm text-slate-700 text-center">Your data, your cloud. We never see your docs—ever.</p>
           </div>
-          <div className="bg-indigo-50 rounded-xl p-8 shadow flex flex-col items-center hover:scale-105 transition">
+          <div className="bg-indigo-100 rounded-xl p-8 shadow flex flex-col items-center hover:scale-105 transition">
             <Image src="/icon-security.png" alt="Security" width={54} height={54} />
             <h4 className="font-bold mt-4 mb-2 text-indigo-700 text-lg">Enterprise Security</h4>
             <p className="text-sm text-slate-700 text-center">SOC2, SSO, audit logs, full compliance—peace of mind for any size.</p>
           </div>
-          <div className="bg-indigo-100 rounded-xl p-8 shadow flex flex-col items-center hover:scale-105 transition">
+          <div className="bg-indigo-200 rounded-xl p-8 shadow flex flex-col items-center hover:scale-105 transition">
             <Image src="/feature-api.png" alt="API" width={54} height={54} />
             <h4 className="font-bold mt-4 mb-2 text-indigo-700 text-lg">API Integrations</h4>
             <p className="text-sm text-slate-700 text-center">Plug Phaeton into your stack. Automate every process, no limits.</p>
           </div>
-          <div className="bg-indigo-50 rounded-xl p-8 shadow flex flex-col items-center hover:scale-105 transition">
+          <div className="bg-indigo-100 rounded-xl p-8 shadow flex flex-col items-center hover:scale-105 transition">
             <Image src="/feature-automation.png" alt="Automation" width={54} height={54} />
             <h4 className="font-bold mt-4 mb-2 text-indigo-700 text-lg">Workflow Automation</h4>
             <p className="text-sm text-slate-700 text-center">Trigger audits, exports, reporting—eliminate busywork forever.</p>
@@ -148,14 +150,14 @@ export default function Home() {
       </section>
 
       {/* DASHBOARD / ANALYTICS SPLIT */}
-      <section className="py-24 bg-gradient-to-r from-indigo-50 via-white to-indigo-100">
+      <section className="py-24 bg-gradient-to-r from-indigo-100 via-white to-indigo-200">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 px-4">
-          <div className="bg-white border border-indigo-100 rounded-2xl shadow-xl p-10 flex flex-col items-center">
+          <div className="bg-indigo-50 border border-indigo-100 rounded-2xl shadow-xl p-10 flex flex-col items-center">
             <Image src="/mockup-dashboard.png" alt="AI Cloud" width={400} height={230} className="rounded-xl shadow mb-6" />
             <h3 className="font-black text-2xl text-indigo-700 mb-3">AI Cloud: Organize, Find, Automate</h3>
             <p className="text-base text-slate-700 mb-1 text-center">Every contract, policy, and manual in one secure place. Permission controls, instant search, bulk upload, and workflows that save hours daily.</p>
           </div>
-          <div className="bg-white border border-indigo-100 rounded-2xl shadow-xl p-10 flex flex-col items-center">
+          <div className="bg-indigo-200 border border-indigo-100 rounded-2xl shadow-xl p-10 flex flex-col items-center">
             <Image src="/mockup-analytics.png" alt="Analytics" width={400} height={230} className="rounded-xl shadow mb-6" />
             <h3 className="font-black text-2xl text-indigo-700 mb-3">Analytics: ROI You Can See</h3>
             <p className="text-base text-slate-700 mb-1 text-center">Track every dollar and hour saved by Phaeton. Interactive dashboards, compliance checks, and KPIs—prove your impact instantly.</p>
@@ -192,28 +194,28 @@ export default function Home() {
           <h3 className="text-2xl font-bold text-indigo-700 mb-8 text-center">Enterprise Power-Ups</h3>
           <div className="flex flex-col md:flex-row gap-8 justify-center">
             {/* API Enterprise */}
-            <div className="flex-1 bg-indigo-100 rounded-2xl shadow-lg p-9 flex flex-col items-center border hover:scale-105 transition">
+            <div className="flex-1 bg-indigo-200 rounded-2xl shadow-lg p-9 flex flex-col items-center border hover:scale-105 transition">
               <Image src="/feature-api.png" alt="API Enterprise" width={48} height={48} />
               <h4 className="font-bold text-indigo-700 mt-4 mb-2 text-lg">API Enterprise</h4>
               <p className="text-slate-700 text-base mb-2 text-center">Connect Phaeton to your stack. Automate uploads, audits, Q&amp;A, and more. Unlock limitless integrations.</p>
               <span className="font-bold text-indigo-600 text-xl mt-auto">$5,000</span>
             </div>
             {/* Custom Branding */}
-            <div className="flex-1 bg-indigo-50 rounded-2xl shadow-lg p-9 flex flex-col items-center border hover:scale-105 transition">
+            <div className="flex-1 bg-indigo-100 rounded-2xl shadow-lg p-9 flex flex-col items-center border hover:scale-105 transition">
               <Image src="/icon-security.png" alt="Custom Branding" width={48} height={48} />
               <h4 className="font-bold text-indigo-700 mt-4 mb-2 text-lg">Custom Branding</h4>
               <p className="text-slate-700 text-base mb-2 text-center">Your logo, your colors, your domain—stand out and make Phaeton truly yours.</p>
               <span className="font-bold text-indigo-600 text-xl mt-auto">$3,000</span>
             </div>
             {/* Bespoke Automations */}
-            <div className="flex-1 bg-indigo-100 rounded-2xl shadow-lg p-9 flex flex-col items-center border hover:scale-105 transition">
-              <Image src="/feature-automation.png" alt="Custom Automations" width={48} height={48} />
+            <div className="flex-1 bg-indigo-200 rounded-2xl shadow-lg p-9 flex flex-col items-center border hover:scale-105 transition">
+              <Image src="/feature-automation-alt.png" alt="Custom Automations" width={48} height={48} />
               <h4 className="font-bold text-indigo-700 mt-4 mb-2 text-lg">Bespoke Automations</h4>
               <p className="text-slate-700 text-base mb-2 text-center">We build automations for your unique processes—save hours, cut costs, and eliminate errors.</p>
               <span className="font-bold text-indigo-600 text-xl mt-auto">$8,000</span>
             </div>
             {/* Data Migration */}
-            <div className="flex-1 bg-indigo-50 rounded-2xl shadow-lg p-9 flex flex-col items-center border hover:scale-105 transition">
+            <div className="flex-1 bg-indigo-100 rounded-2xl shadow-lg p-9 flex flex-col items-center border hover:scale-105 transition">
               <Image src="/icon-upload.png" alt="Data Migration" width={48} height={48} />
               <h4 className="font-bold text-indigo-700 mt-4 mb-2 text-lg">Migration &amp; Integration</h4>
               <p className="text-slate-700 text-base mb-2 text-center">Migrate all your data, even from legacy systems—safe, fast, zero downtime.</p>
@@ -221,7 +223,7 @@ export default function Home() {
             </div>
           </div>
           <div className="text-center mt-8 text-slate-600 text-sm opacity-90">
-            All extras are <b>optional</b> and tailored to your business. Ask for a custom quote.
+          All extras are <b>optional</b> and tailored to your business. Ask for a custom quote and unlock the full power of Phaeton Enterprise.
           </div>
         </div>
       </section>
@@ -231,17 +233,15 @@ export default function Home() {
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12 justify-between px-4">
           <div className="flex-1">
             <Image src="/avatar-testimonial.png" alt="CEO" width={68} height={68} className="mb-5 rounded-full bg-indigo-100" />
-            <p className="italic text-lg mb-4 text-slate-700">
-              &ldquo;Phaeton lets us audit and query policies across 10+ countries—no more endless scrolling or wasted hours.&rdquo;
+            <p className="italic text-xl mb-4 text-slate-700">
+              "Phaeton lets us audit and query policies across 10+ countries—no more endless scrolling or wasted hours."
             </p>
-            <div className="font-bold text-indigo-700 text-base">
-              CEO, Global Enterprise Client
-            </div>
+            <div className="font-bold text-indigo-700 text-base">CEO, Global Enterprise Client</div>
           </div>
           <div className="flex-1 flex justify-center">
             <a
               href="#demo"
-              className="flex items-center gap-3 px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white text-xl rounded-2xl font-bold shadow-xl transition mt-6 md:mt-0"
+              className="flex items-center gap-4 px-10 py-5 bg-indigo-600 hover:bg-indigo-700 text-white text-2xl rounded-2xl font-bold shadow-xl transition mt-6 md:mt-0"
             >
               Try Phaeton Now
             </a>
@@ -253,49 +253,41 @@ export default function Home() {
       <section id="faq" className="py-24 bg-white">
         <h2 className="text-4xl font-bold text-center text-indigo-700 mb-12">FAQ</h2>
         <div className="flex flex-col md:flex-row gap-16 items-center justify-center max-w-5xl mx-auto">
-          <div className="flex-1 space-y-8 text-base">
+          <div className="flex-1 space-y-10 text-lg">
             <div>
-              <h4 className="font-bold text-indigo-600 mb-1">Is my data secure?</h4>
-              <p>
-                Yes! Everything runs on your cloud or on-premises. No 3rd-party access, ever.
-              </p>
+              <h4 className="font-bold text-indigo-600 mb-2">Is my data secure?</h4>
+              <p>Absolutely! Everything runs on your cloud or on-premises. No third-party access, ever.</p>
             </div>
             <div>
-              <h4 className="font-bold text-indigo-600 mb-1">Can I use my own templates?</h4>
-              <p>
-                Absolutely! Upload any format, customize workflows, and brand your portal as you wish.
-              </p>
+              <h4 className="font-bold text-indigo-600 mb-2">Can I use my own templates?</h4>
+              <p>Definitely! Upload any format, customize workflows, and brand your portal as you wish.</p>
             </div>
             <div>
-              <h4 className="font-bold text-indigo-600 mb-1">How fast is setup?</h4>
-              <p>
-                Up &amp; running in a day. Zero technical complexity—just plug and go.
-              </p>
+              <h4 className="font-bold text-indigo-600 mb-2">How fast is setup?</h4>
+              <p>Up &amp; running in a day. Zero technical complexity—just plug and go.</p>
             </div>
             <div>
-              <h4 className="font-bold text-indigo-600 mb-1">What does it cost to scale?</h4>
-              <p>
-                Flat price, unlimited users &amp; docs. No surprises. Custom pricing? Just ask us.
-              </p>
+              <h4 className="font-bold text-indigo-600 mb-2">What does it cost to scale?</h4>
+              <p>Flat price, unlimited users &amp; docs. No surprises. Custom pricing? Just ask us.</p>
             </div>
           </div>
           <div className="flex-1 flex justify-center">
-            <Image
-              src="/faq-business-ai.png"
-              alt="FAQ"
-              width={340}
-              height={340}
-              className="rounded-2xl shadow border bg-white"
-            />
+            <Image src="/faq-business-ai.png" alt="FAQ" width={340} height={340} className="rounded-2xl shadow border bg-white" />
           </div>
         </div>
       </section>
 
       {/* FOOTER */}
-      <footer className="py-8 text-center text-sm opacity-70 bg-gradient-to-r from-white to-indigo-50 text-slate-700">
-        &copy; 2025 Phaeton AI &middot; All rights reserved.
+      <footer className="py-10 text-center text-base font-semibold bg-gradient-to-r from-white via-indigo-100 to-indigo-50 text-slate-700 mt-auto border-t border-indigo-100">
+        <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 px-4">
+          <span>
+            &copy; {new Date().getFullYear()} <b>Phaeton AI</b> &mdash; Built for bold companies. All rights reserved.
+          </span>
+          <span>
+            <span className="text-indigo-600">Trust your next move.</span> | <a href="mailto:contact@phaeton-ai.com" className="underline hover:text-indigo-800">Contact us</a>
+          </span>
+        </div>
       </footer>
     </main>
   );
 }
-
