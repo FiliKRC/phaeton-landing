@@ -1,0 +1,50 @@
+Phæton AI
+Enterprise Document Q&A in Seconds
+
+1 Problem
+ Companies waste hours searching through manuals, policies and contracts.
+ Documents are complex, constantly updated, and teams get blocked waiting for experts.
+
+2 Solution
+Phæton AI is a SaaS platform that lets anyone upload PDF, DOCX or TXT and get instant answers—zero training, zero calls.
+
+-  Instant Q&A: query your documents as if you were talking to an expert colleague.
+-  Enterprise-grade Security: SSO / 2FA, granular roles, encryption at-rest and in-transit.
+-  Deep Integration: read and write directly to ERP/CRM (SAP, Salesforce, Dynamics).
+-  Vertical Modules: Sales-Copilot, Legal-Copilot, Auto-Reporting.
+
+3 Key Features
+
+• SSO & 2FA  
+  → Immediate access, IT policies enforced  
+• Granular Roles  
+  → Full control over who sees what  
+• ERP/CRM Bi-Directional  
+  → Automate data entry  
+• Streamlined UI  
+  → Minimal interface, zero learning curve  
+• On-Site Training & Manuals  
+  → Get your team up and running without surprises  
+• 24/7 SLA & Support  
+  → Always online, 1 h response time
+
+4 Pricing & Deployment
+
+- License Fee: € 15 000 one-off  
+- Maintenance & SLA: € 8 000/year  
+- Enterprise Bundle (all modules): € 32 000/year  
+- Deployment: SaaS in dedicated VPC or On-prem (Docker + Helm)
+
+5 ROI in 24 h
+
+“We cut legal information retrieval time by 70 %, saving 40 h/month per team.”  
+— Legal Manager, Fortune 500
+
+6 Next Steps
+
+1. Go to **demo.phaeton-ai.com**, password `demo2025`  
+2. Upload your PDFs  
+3. Ask “What’s our SLA for incident response?”
+
+✉️ Ready to talk numbers?  
+sales@phaeton-ai.com · www.phaeton-ai.com

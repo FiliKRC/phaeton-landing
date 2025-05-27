@@ -2,20 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* reset e variabili */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #0f172a;
+  --foreground: #f8fafc;
 }
 
 body {
+  margin: 0;
+  font-family: var(--font-geist-sans), sans-serif;
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
