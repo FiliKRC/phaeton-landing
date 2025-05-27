@@ -7,7 +7,6 @@ import ProfessionalOverview from "./components/ProfessionalOverview";
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col bg-gradient-to-br from-white via-slate-50 to-indigo-50 text-slate-900">
-
       {/* Navbar */}
       <nav className="sticky top-0 z-30 bg-white/90 backdrop-blur flex justify-between items-center px-8 py-4 border-b border-indigo-100 shadow-sm">
         <span className="text-2xl md:text-3xl font-black tracking-tight text-indigo-700 select-none">
@@ -37,8 +36,12 @@ export default function Home() {
             transition={{ duration: 0.7 }}
             className="text-5xl font-extrabold leading-tight mb-7"
           >
-            <span className="block mb-1">The <span className="text-indigo-600">Business Brain</span> that never sleeps.</span>
-            <span className="text-slate-500 text-2xl block mt-2">Every document. Every answer. Every automation.</span>
+            <span className="block mb-1">
+              The <span className="text-indigo-600">Business Brain</span> that never sleeps.
+            </span>
+            <span className="text-slate-500 text-2xl block mt-2">
+              Every document. Every answer. Every automation.
+            </span>
           </motion.h1>
           <p className="mb-7 text-xl text-indigo-800 font-semibold">
             <span className="bg-indigo-200 px-4 py-2 rounded-2xl">
@@ -46,7 +49,7 @@ export default function Home() {
             </span>
           </p>
           <ul className="mb-8 space-y-2 text-lg font-medium text-slate-700">
-            <li><b>&bull; Upload ANY business doc</b> (contracts, policies, manuals…)</li>
+            <li><b>&bull; Upload ANY business doc</b> (contracts, policies, manuals...)</li>
             <li><b>&bull; Get instant, expert answers</b> 24/7 (no manual search)</li>
             <li><b>&bull; Automate workflows, spot risks & save time</b> in minutes</li>
           </ul>
@@ -112,7 +115,7 @@ export default function Home() {
           <div className="flex flex-col items-center text-center px-8">
             <Image src="/icon-ai.png" alt="AI" width={80} height={80} />
             <h4 className="font-bold mt-5 text-lg text-indigo-700">2. Ask Anything</h4>
-            <p className="opacity-90 text-base text-slate-700">Ask questions in plain English. Phaeton “gets” business, not just text.</p>
+            <p className="opacity-90 text-base text-slate-700">Ask questions in plain English. Phaeton "gets" business, not just text.</p>
           </div>
           <div className="flex flex-col items-center text-center px-8">
             <Image src="/feature-automation-alt.png" alt="Automation" width={80} height={80} />
@@ -246,46 +249,46 @@ export default function Home() {
             <a
               href="#demo"
               className="flex items-center gap-4 px-10 py-5 bg-indigo-600 hover:bg-indigo-700 text-white text-2xl rounded-2xl font-bold shadow transition mt-6 md:mt-0"
-              >
-                Try Phaeton Now
-              </a>
+            >
+              Try Phaeton Now
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section id="faq" className="py-24 bg-white">
+        <h2 className="text-4xl font-bold text-center text-indigo-700 mb-14">FAQ</h2>
+        <div className="flex flex-col md:flex-row gap-14 items-center justify-center max-w-5xl mx-auto">
+          <div className="flex-1 space-y-10 text-base">
+            <div>
+              <h4 className="font-bold text-indigo-600 mb-2">Is my data secure?</h4>
+              <p>Absolutely! Everything runs on your cloud or on-premises. No third-party access, ever.</p>
+            </div>
+            <div>
+              <h4 className="font-bold text-indigo-600 mb-2">Can I use my own templates?</h4>
+              <p>Of course! Upload any format, customize workflows, and brand your portal as you wish.</p>
+            </div>
+            <div>
+              <h4 className="font-bold text-indigo-600 mb-2">How fast is setup?</h4>
+              <p>Up & running in a day. Zero technical complexity—just plug and go.</p>
+            </div>
+            <div>
+              <h4 className="font-bold text-indigo-600 mb-2">What does it cost to scale?</h4>
+              <p>Flat price, unlimited users & docs. No surprises. Custom pricing? Just ask us.</p>
             </div>
           </div>
-        </section>
-  
-        {/* FAQ */}
-        <section id="faq" className="py-24 bg-white">
-          <h2 className="text-4xl font-bold text-center text-indigo-700 mb-14">FAQ</h2>
-          <div className="flex flex-col md:flex-row gap-14 items-center justify-center max-w-5xl mx-auto">
-            <div className="flex-1 space-y-10 text-base">
-              <div>
-                <h4 className="font-bold text-indigo-600 mb-2">Is my data secure?</h4>
-                <p>Absolutely! Everything runs on your cloud or on-premises. No third-party access, ever.</p>
-              </div>
-              <div>
-                <h4 className="font-bold text-indigo-600 mb-2">Can I use my own templates?</h4>
-                <p>Of course! Upload any format, customize workflows, and brand your portal as you wish.</p>
-              </div>
-              <div>
-                <h4 className="font-bold text-indigo-600 mb-2">How fast is setup?</h4>
-                <p>Up & running in a day. Zero technical complexity—just plug and go.</p>
-              </div>
-              <div>
-                <h4 className="font-bold text-indigo-600 mb-2">What does it cost to scale?</h4>
-                <p>Flat price, unlimited users & docs. No surprises. Custom pricing? Just ask us.</p>
-              </div>
-            </div>
-            <div className="flex-1 flex justify-center">
-              <Image src="/faq-business-ai.png" alt="FAQ" width={340} height={340} className="rounded-2xl shadow border bg-white" />
-            </div>
+          <div className="flex-1 flex justify-center">
+            <Image src="/faq-business-ai.png" alt="FAQ" width={340} height={340} className="rounded-2xl shadow border bg-white" />
           </div>
-        </section>
-  
-        {/* FOOTER */}
-        <footer className="py-8 text-center text-base opacity-80 bg-gradient-to-r from-white to-indigo-50 text-slate-700">
-          © 2025 Phaeton AI · All rights reserved. <br />
-          <span className="text-indigo-500 font-bold">Work like tomorrow.</span>
-        </footer>
-      </main>
-    );
-  }
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="py-8 text-center text-base opacity-80 bg-gradient-to-r from-white to-indigo-50 text-slate-700">
+        © 2025 Phaeton AI · All rights reserved. <br />
+        <span className="text-indigo-500 font-bold">Work like tomorrow.</span>
+      </footer>
+    </main>
+  );
+}
