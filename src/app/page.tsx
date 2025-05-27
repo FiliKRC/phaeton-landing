@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 export default function Home() {
   return (
@@ -35,7 +35,7 @@ export default function Home() {
       <section className="py-12 bg-slate-100 dark:bg-slate-900">
         <div className="max-w-3xl mx-auto px-4">
           <img
-            src="/mockup.png"
+            src="https://placehold.co/800x400?text=Dashboard+Preview"
             alt="Dashboard preview"
             className="w-full rounded-lg shadow-lg border"
           />
