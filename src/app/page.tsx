@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import ProfessionalOverview from "./components/ProfessionalOverview";
 
 export default function Home() {
   return (
@@ -70,6 +71,8 @@ export default function Home() {
           />
         </motion.div>
       </section>
+      
+      <ProfessionalOverview />
 
       {/* WHY PHAETON */}
       <section id="why" className="py-20 bg-gradient-to-b from-indigo-50 to-white">
