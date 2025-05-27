@@ -41,9 +41,9 @@ export default function Home() {
             <span className="text-slate-500 text-2xl block mt-2">Your documents, your insights, your AI—limitless.</span>
           </motion.h1>
           <ul className="mb-7 space-y-2 text-lg font-medium text-slate-700">
-            <li><b>• Upload any business doc</b> (contracts, policies, manuals…)</li>
-            <li><b>• Get instant, expert answers</b> 24/7 (no manual search)</li>
-            <li><b>• Automate tasks, spot risks & save time</b> in minutes</li>
+            <li><b>&bull; Upload any business doc</b> (contracts, policies, manuals&hellip;)</li>
+            <li><b>&bull; Get instant, expert answers</b> 24/7 (no manual search)</li>
+            <li><b>&bull; Automate tasks, spot risks &amp; save time</b> in minutes</li>
           </ul>
           <a
             href="#demo"
@@ -76,7 +76,7 @@ export default function Home() {
           <div className="flex-1 flex flex-col gap-6">
             <div className="bg-white/90 rounded-2xl shadow p-6 border-l-4 border-indigo-400">
               <h4 className="font-bold text-lg text-indigo-600 mb-1">Battle-tested security</h4>
-              <p className="text-base text-slate-700">All your data stays 100% private—hosted on your cloud or servers. No external access, no leaks. Enterprise-grade security is our foundation.</p>
+              <p className="text-base text-slate-700">All your data stays 100% private&mdash;hosted on your cloud or servers. No external access, no leaks. Enterprise-grade security is our foundation.</p>
             </div>
             <div className="bg-white/90 rounded-2xl shadow p-6 border-l-4 border-indigo-400">
               <h4 className="font-bold text-lg text-indigo-600 mb-1">Genuine business intelligence</h4>
@@ -84,7 +84,7 @@ export default function Home() {
             </div>
             <div className="bg-white/90 rounded-2xl shadow p-6 border-l-4 border-indigo-400">
               <h4 className="font-bold text-lg text-indigo-600 mb-1">Results, not hype</h4>
-              <p className="text-base text-slate-700">Phaeton saves hours every week, cuts risk, and empowers teams with the **right** information. That's why fast-growing businesses are making the switch—don’t be left behind.</p>
+              <p className="text-base text-slate-700">Phaeton saves hours every week, cuts risk, and empowers teams with the <b>right</b> information. That&apos;s why fast-growing businesses are making the switch&mdash;don&apos;t be left behind.</p>
             </div>
           </div>
           <div className="flex-1 flex items-center justify-center">
@@ -100,16 +100,16 @@ export default function Home() {
           <div className="flex flex-col items-center text-center px-6">
             <Image src="/icon-upload.png" alt="Upload" width={80} height={80} />
             <h4 className="font-bold mt-4 text-lg">1. Upload</h4>
-            <p className="opacity-80 text-base">Drag & drop any file—PDF, Word, whatever. Zero IT required.</p>
+            <p className="opacity-80 text-base">Drag &amp; drop any file&mdash;PDF, Word, whatever. Zero IT required.</p>
           </div>
           <div className="flex flex-col items-center text-center px-6">
             <Image src="/icon-ai.png" alt="AI" width={80} height={80} />
             <h4 className="font-bold mt-4 text-lg">2. Ask Anything</h4>
-            <p className="opacity-80 text-base">Phaeton “gets” business questions. Get answers, not just chat.</p>
+            <p className="opacity-80 text-base">Phaeton &ldquo;gets&rdquo; business questions. Get answers, not just chat.</p>
           </div>
           <div className="flex flex-col items-center text-center px-6">
             <Image src="/feature-automation-alt.png" alt="Automation" width={80} height={80} />
-            <h4 className="font-bold mt-4 text-lg">3. Automate & Analyze</h4>
+            <h4 className="font-bold mt-4 text-lg">3. Automate &amp; Analyze</h4>
             <p className="opacity-80 text-base">Automate boring work, track key metrics, and see the big picture instantly.</p>
           </div>
         </div>
@@ -122,7 +122,7 @@ export default function Home() {
           <div className="bg-indigo-100 rounded-xl p-7 shadow flex flex-col items-center hover:scale-105 transition">
             <Image src="/feature-privacy.png" alt="Privacy" width={54} height={54} />
             <h4 className="font-bold mt-4 mb-1 text-indigo-700">Full Privacy</h4>
-            <p className="text-sm text-slate-600 text-center">Your data, your cloud. We never see your docs—ever.</p>
+            <p className="text-sm text-slate-600 text-center">Your data, your cloud. We never see your docs&mdash;ever.</p>
           </div>
           <div className="bg-indigo-50 rounded-xl p-7 shadow flex flex-col items-center hover:scale-105 transition">
             <Image src="/icon-security.png" alt="Security" width={54} height={54} />
@@ -137,7 +137,7 @@ export default function Home() {
           <div className="bg-indigo-50 rounded-xl p-7 shadow flex flex-col items-center hover:scale-105 transition">
             <Image src="/feature-automation.png" alt="Automation" width={54} height={54} />
             <h4 className="font-bold mt-4 mb-1 text-indigo-700">Workflow Automation</h4>
-            <p className="text-sm text-slate-600 text-center">Trigger audits, exports, and reporting—no busywork.</p>
+            <p className="text-sm text-slate-600 text-center">Trigger audits, exports, and reporting&mdash;no busywork.</p>
           </div>
         </div>
       </section>
@@ -153,7 +153,7 @@ export default function Home() {
           <div className="bg-white border border-indigo-100 rounded-2xl shadow-xl p-8 flex flex-col items-center">
             <Image src="/mockup-analytics.png" alt="Analytics" width={400} height={230} className="rounded-xl shadow mb-4" />
             <h3 className="font-black text-2xl text-indigo-700 mb-2">Analytics: ROI You Can See</h3>
-            <p className="text-base text-slate-700 mb-3 text-center">Track every dollar and hour saved by Phaeton. Interactive dashboards, compliance checks, and KPIs—prove your impact.</p>
+            <p className="text-base text-slate-700 mb-3 text-center">Track every dollar and hour saved by Phaeton. Interactive dashboards, compliance checks, and KPIs&mdash;prove your impact.</p>
           </div>
         </div>
       </section>
@@ -167,11 +167,11 @@ export default function Home() {
             <p className="text-5xl font-extrabold mb-2 text-indigo-600">$20,000</p>
             <p className="mb-4 text-base text-slate-600">One-time setup. Includes 1 year of support.<br />Enterprise extras on demand.</p>
             <ul className="mb-6 text-left text-base list-disc list-inside text-slate-800">
-              <li>Unlimited users & storage</li>
-              <li>Custom branding & analytics</li>
-              <li>API access & automations</li>
+              <li>Unlimited users &amp; storage</li>
+              <li>Custom branding &amp; analytics</li>
+              <li>API access &amp; automations</li>
               <li>Full privacy (your cloud/on-prem)</li>
-              <li>Premium support, updates & more</li>
+              <li>Premium support, updates &amp; more</li>
             </ul>
             <a href="#demo" className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-xl transition font-bold shadow">
               Request Demo
@@ -179,7 +179,7 @@ export default function Home() {
           </div>
         </div>
         <div className="text-center mt-7 text-xs opacity-70 text-slate-500">
-          All prices in USD. VAT not included. Custom plans available—ask us!
+          All prices in USD. VAT not included. Custom plans available&mdash;ask us!
         </div>
 
         {/* EXTRAS TABLE */}
@@ -190,28 +190,28 @@ export default function Home() {
             <div className="flex-1 bg-indigo-100 rounded-2xl shadow-lg p-7 flex flex-col items-center border hover:scale-105 transition">
               <Image src="/feature-api.png" alt="API Enterprise" width={48} height={48} />
               <h4 className="font-bold text-indigo-700 mt-3 mb-1 text-lg">API Enterprise</h4>
-              <p className="text-slate-700 text-base mb-2 text-center">Connect Phaeton to your stack. Automate uploads, audits, Q&A, and more. Unlock limitless integrations.</p>
+              <p className="text-slate-700 text-base mb-2 text-center">Connect Phaeton to your stack. Automate uploads, audits, Q&amp;A, and more. Unlock limitless integrations.</p>
               <span className="font-bold text-indigo-600 text-xl mt-auto">$5,000</span>
             </div>
             {/* Custom Branding */}
             <div className="flex-1 bg-indigo-50 rounded-2xl shadow-lg p-7 flex flex-col items-center border hover:scale-105 transition">
               <Image src="/icon-security.png" alt="Custom Branding" width={48} height={48} />
               <h4 className="font-bold text-indigo-700 mt-3 mb-1 text-lg">Custom Branding</h4>
-              <p className="text-slate-700 text-base mb-2 text-center">Your logo, your colors, your domain—stand out and make Phaeton truly yours.</p>
+              <p className="text-slate-700 text-base mb-2 text-center">Your logo, your colors, your domain&mdash;stand out and make Phaeton truly yours.</p>
               <span className="font-bold text-indigo-600 text-xl mt-auto">$3,000</span>
             </div>
             {/* Bespoke Automations */}
             <div className="flex-1 bg-indigo-100 rounded-2xl shadow-lg p-7 flex flex-col items-center border hover:scale-105 transition">
               <Image src="/feature-automation.png" alt="Custom Automations" width={48} height={48} />
               <h4 className="font-bold text-indigo-700 mt-3 mb-1 text-lg">Bespoke Automations</h4>
-              <p className="text-slate-700 text-base mb-2 text-center">We build automations for your unique processes—save hours, cut costs, and eliminate errors.</p>
+              <p className="text-slate-700 text-base mb-2 text-center">We build automations for your unique processes&mdash;save hours, cut costs, and eliminate errors.</p>
               <span className="font-bold text-indigo-600 text-xl mt-auto">$8,000</span>
             </div>
             {/* Data Migration */}
             <div className="flex-1 bg-indigo-50 rounded-2xl shadow-lg p-7 flex flex-col items-center border hover:scale-105 transition">
               <Image src="/icon-upload.png" alt="Data Migration" width={48} height={48} />
-              <h4 className="font-bold text-indigo-700 mt-3 mb-1 text-lg">Migration & Integration</h4>
-              <p className="text-slate-700 text-base mb-2 text-center">Migrate all your data, even from legacy systems—safe, fast, zero downtime.</p>
+              <h4 className="font-bold text-indigo-700 mt-3 mb-1 text-lg">Migration &amp; Integration</h4>
+              <p className="text-slate-700 text-base mb-2 text-center">Migrate all your data, even from legacy systems&mdash;safe, fast, zero downtime.</p>
               <span className="font-bold text-indigo-600 text-xl mt-auto">from $4,000</span>
             </div>
           </div>
@@ -227,7 +227,7 @@ export default function Home() {
           <div className="flex-1">
             <Image src="/avatar-testimonial.png" alt="CEO" width={68} height={68} className="mb-4 rounded-full bg-indigo-100" />
             <p className="italic text-lg mb-3 text-slate-700">
-              “Phaeton lets us audit and query policies across 10+ countries—no more endless scrolling or wasted hours.”
+              &ldquo;Phaeton lets us audit and query policies across 10+ countries&mdash;no more endless scrolling or wasted hours.&rdquo;
             </p>
             <div className="font-bold text-indigo-700 text-base">CEO, Global Enterprise Client</div>
           </div>
@@ -257,11 +257,11 @@ export default function Home() {
             </div>
             <div>
               <h4 className="font-bold text-indigo-600 mb-1">How fast is setup?</h4>
-              <p>Up & running in a day. Zero technical complexity—just plug and go.</p>
+              <p>Up &amp; running in a day. Zero technical complexity&mdash;just plug and go.</p>
             </div>
             <div>
               <h4 className="font-bold text-indigo-600 mb-1">What does it cost to scale?</h4>
-              <p>Flat price, unlimited users & docs. No surprises. Custom pricing? Just ask us.</p>
+              <p>Flat price, unlimited users &amp; docs. No surprises. Custom pricing? Just ask us.</p>
             </div>
           </div>
           <div className="flex-1 flex justify-center">
@@ -272,7 +272,7 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="py-7 text-center text-sm opacity-70 bg-gradient-to-r from-white to-indigo-50 text-slate-700">
-        © 2025 Phaeton AI · All rights reserved.
+        &copy; 2025 Phaeton AI &middot; All rights reserved.
       </footer>
     </main>
   );
