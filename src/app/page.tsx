@@ -76,7 +76,7 @@ export default function Home() {
           />
         </motion.div>
       </section>
-      
+
       <ProfessionalOverview />
 
       {/* WHY PHAETON */}
@@ -110,16 +110,16 @@ export default function Home() {
           <div className="flex flex-col items-center text-center px-8">
             <Image src="/icon-upload.png" alt="Upload" width={80} height={80} />
             <h4 className="font-bold mt-5 text-lg text-indigo-700">1. Upload</h4>
-            <p className="opacity-90 text-base text-slate-700">Drag & drop any file—PDF, Word, whatever. No tech team needed.</p>
+            <p className="opacity-90 text-base text-slate-700">Drag &amp; drop any file—PDF, Word, whatever. No tech team needed.</p>
           </div>
           <div className="flex flex-col items-center text-center px-8">
             <Image src="/icon-ai.png" alt="AI" width={80} height={80} />
             <h4 className="font-bold mt-5 text-lg text-indigo-700">2. Ask Anything</h4>
-            <p className="opacity-90 text-base text-slate-700">Ask questions in plain English. Phaeton "gets" business, not just text.</p>
+            <p className="opacity-90 text-base text-slate-700">Ask questions in plain English. Phaeton &quot;gets&quot; business, not just text.</p>
           </div>
           <div className="flex flex-col items-center text-center px-8">
             <Image src="/feature-automation-alt.png" alt="Automation" width={80} height={80} />
-            <h4 className="font-bold mt-5 text-lg text-indigo-700">3. Automate & Analyze</h4>
+            <h4 className="font-bold mt-5 text-lg text-indigo-700">3. Automate &amp; Analyze</h4>
             <p className="opacity-90 text-base text-slate-700">Automate boring tasks, get instant analytics, and boost your workflow.</p>
           </div>
         </div>
@@ -241,7 +241,7 @@ export default function Home() {
           <div className="flex-1">
             <Image src="/avatar-testimonial.png" alt="CEO" width={68} height={68} className="mb-5 rounded-full bg-indigo-100" />
             <p className="italic text-xl mb-4 text-slate-700">
-              "Phaeton lets us audit and query policies across 10+ countries—no more endless scrolling or wasted hours."
+              &quot;Phaeton lets us audit and query policies across 10+ countries—no more endless scrolling or wasted hours.&quot;
             </p>
             <div className="font-bold text-indigo-700 text-base">CEO, Global Enterprise Client</div>
           </div>
@@ -271,11 +271,11 @@ export default function Home() {
             </div>
             <div>
               <h4 className="font-bold text-indigo-600 mb-2">How fast is setup?</h4>
-              <p>Up & running in a day. Zero technical complexity—just plug and go.</p>
+              <p>Up &amp; running in a day. Zero technical complexity—just plug and go.</p>
             </div>
             <div>
               <h4 className="font-bold text-indigo-600 mb-2">What does it cost to scale?</h4>
-              <p>Flat price, unlimited users & docs. No surprises. Custom pricing? Just ask us.</p>
+              <p>Flat price, unlimited users &amp; docs. No surprises. Custom pricing? Just ask us.</p>
             </div>
           </div>
           <div className="flex-1 flex justify-center">
